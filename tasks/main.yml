@@ -59,6 +59,11 @@
     - shelldap
     - spim
     - rust-stable
+  
+- name: Install programming libraries
+  apt: name={{ item }} state=present
+  with_items:
+    - sqlite3-devel
 
 - name: Install additional editors
   apt: name={{ item }} state=present
