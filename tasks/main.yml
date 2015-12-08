@@ -102,6 +102,7 @@
     - ubuntu-restricted-extras
     - wine
     - zsh
+    - xautolock
 
 - name: Support more python development
   apt: name={{ item }} state=present
